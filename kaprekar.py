@@ -12,7 +12,7 @@ for i in range(N):
     m = 0
     print("%0*d" % (d, n), end="")
     step = 0
-    while n != 0 and m != n and step < try_steps and n not in (62964, 61974, 53955):
+    while n != 0 and m != n and step < try_steps:
         n = m if step > 0 else n
         lst = [(n // 10 ** j) % 10 for j in range(0, d)]
         lst.sort()
